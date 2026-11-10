@@ -10,15 +10,20 @@ def main():
                 ut.viewShelterInfo()
                 ut.pressEnter()
             elif userChoice == 2:
-                print("second test")
+                ut.clearScreen()
+                ut.changeValue()
+                ut.pressEnter()
             elif userChoice == 3:
-                print("third test")
+                ut.clearScreen()
+                ut.viewLog()
+                ut.pressEnter()
             else:
+                ut.returnJSON()
+                ut.clearLog()
                 print("Thanks for playing!")
                 break
         except ValueError:
             print("Enter a number (1-3) from above: ")
-
 
 if __name__ == "__main__":
     main()
